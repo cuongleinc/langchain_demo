@@ -3,5 +3,3 @@ langchain_community
 langchain_core
 langchain-openai
 streamlit
-pypdf
-sqlite3
