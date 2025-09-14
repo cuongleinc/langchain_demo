@@ -5,3 +5,4 @@ langchain-openai
 streamlit
 pypdf
 chromadb
+sqlite3 >= 3.35.0
