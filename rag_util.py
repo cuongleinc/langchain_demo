@@ -11,6 +11,6 @@ class RAG:
         print(f"Loaded {len(docs)} PDF pages")
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=500)
         splits = text_splitter.split_documents(docs)
-        vectorstore = Chroma.from_documents(documents=splits, embedding=OpenAIEmbeddings(), persist_directory=None)
+        vectorstore = Chroma.from_documents(documents=splits, embedding=OpenAIEmbeddings())
         retriever = vectorstore.as_retriever()
         return retriever
